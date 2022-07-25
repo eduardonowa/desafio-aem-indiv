@@ -2,7 +2,7 @@ import CustomClasses from './components/CustomClasses/CustomClasses'
 import Text from './components/Text/Text'
 import AppPage from './components/Page/AppPage'
 import CheckBox from './components/Checkbox/Checkbox'
-import Header from './components/Header/Header'
+import Header from './components/containers/Header/Header'
 import Image from './components/Image/Image'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import {
