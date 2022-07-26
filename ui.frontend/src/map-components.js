@@ -7,6 +7,7 @@ import Image from './components/Image/Image'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import ButtonType from './components/micro/ButtonType/ButtonType'
 import Title from './components/micro/Title/Title'
+import TextContent from './components/micro/TextContent/TextContent'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -43,6 +44,9 @@ MapTo('vue/components/title')(Title, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/header')(Header, EditConfig)
+
+// TextContent Component Mapping
+MapTo('vue/components/text-content')(TextContent, EditConfig)
 
 // ButtonType Component Mapping
 MapTo('vue/components/button-type')(ButtonType, EditConfig)

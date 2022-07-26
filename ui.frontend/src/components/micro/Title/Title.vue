@@ -6,14 +6,14 @@
 
 <script>
 export default {
-  name: "Title",
+  name: 'Title',
   props: {
     titleText: {
       type: String,
-      default: "I have bad news for you",
-    },
-  },
-};
+      default: 'I have bad news for you'
+    }
+  }
+}
 </script>
 
 <style lang="scss" scooped>
