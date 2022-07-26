@@ -30,5 +30,6 @@ header {
   letter-spacing: -0.08em;
   text-transform: uppercase;
   color: #333333;
+  margin: 5vh 5vw;
 }
 </style>

@@ -22,11 +22,11 @@ export default {
       default: 'Compass.UOL'
     },
     href: {
-      type: URL,
+      type: String,
       default: 'https://github.com/eduardonowa'
     },
     hrefCompany: {
-      type: URL,
+      type: String,
       default: 'https://compass.uol/'
     }
   }
@@ -44,6 +44,7 @@ footer {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 10vh;
   p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
