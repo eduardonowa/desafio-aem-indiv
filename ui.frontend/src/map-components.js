@@ -6,6 +6,7 @@ import Header from './components/containers/Header/Header'
 import Image from './components/Image/Image'
 import MultifieldExampleComponent from './components/MultifieldExampleComponent/MultifieldExampleComponent'
 import ButtonType from './components/micro/ButtonType/ButtonType'
+import Title from './components/micro/Title/Title'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -36,6 +37,9 @@ MapTo('vue/components/multifield-example-component')(
 
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(CheckBox, EditConfig)
+
+// Title Component Mapping
+MapTo('vue/components/title')(Title, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/header')(Header, EditConfig)
