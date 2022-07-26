@@ -8,6 +8,7 @@ import MultifieldExampleComponent from './components/MultifieldExampleComponent/
 import ButtonType from './components/micro/ButtonType/ButtonType'
 import Title from './components/micro/Title/Title'
 import TextContent from './components/micro/TextContent/TextContent'
+import Main from './components/containers/Main/Main'
 import Footer from './components/containers/Footer/Footer'
 import {
   withComponentMappingContext,
@@ -42,6 +43,9 @@ MapTo('vue/components/checkbox')(CheckBox, EditConfig)
 
 // Title Component Mapping
 MapTo('vue/components/title')(Title, EditConfig)
+
+// Main Component Mapping
+MapTo('vue/components/main')(Main, EditConfig)
 
 // Footer Component Mapping
 MapTo('vue/components/footer')(Footer, EditConfig)

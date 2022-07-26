@@ -11,26 +11,21 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <user
+                    <title
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Github Username"
-                        name="./username"/>
-                    <gituser
+                        fieldLabel="Title Txt"
+                        name="./textTitle"/>
+                    <text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Github Link"
-                        name="./href"/>
-                    <company
+                        fieldLabel="Content Txt"
+                        name="./textContent"/>
+                    <button
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Company Name"
-                        name="./company"/>
-                    <companysite
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Company WebSite"
-                        name="./hrefCompany"/>
+                        fieldLabel="Button Txt"
+                        name="./textButton"/>
                 </items>
             </column>
         </items>

@@ -21,7 +21,7 @@ export default {
 <style lang="scss" scooped>
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 header {
-  width: 100%;
+  width: 90%;
   font-family: "Inconsolata", monospace;
   font-style: normal;
   font-weight: 700;
@@ -30,5 +30,10 @@ header {
   letter-spacing: -0.08em;
   text-transform: uppercase;
   color: #333333;
+  margin: 2vh 5vw;
+
+  @media (max-width: 768px) {
+    margin: 15px;
+  }
 }
 </style>
