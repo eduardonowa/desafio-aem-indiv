@@ -1,8 +1,5 @@
 <template>
   <main class="main-container">
-    <div class="left-main">
-      <Image :src="imgUrl" />
-    </div>
     <div class="right-main">
       <Title :titleText="textTitle" />
       <TextContent :contentText="textContent" />
@@ -14,20 +11,16 @@
 <script>
 import Title from '../../micro/Title/Title.vue'
 import TextContent from '../../micro/TextContent/TextContent.vue'
-import Image from '../../micro/Image/Image.vue'
+
 import ButtonType from '../../micro/ButtonType/ButtonType.vue'
 export default {
   name: 'Main',
   components: {
     Title,
     TextContent,
-    Image,
     ButtonType
   },
   props: {
-    imgUrl: {
-      type: String
-    },
     textTitle: {
       type: String
     },
@@ -46,25 +39,18 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  height: 100vh;
 }
 
 main {
   display: flex;
-  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin: 20px 0px;
-
-  .left-main {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 50%;
+  margin-left: 5vw;
+  @media (max-width: 768px) {
+    margin-left: 15px;
+    width: 99%;
   }
-
   .right-main {
     display: flex;
     flex-flow: column nowrap;

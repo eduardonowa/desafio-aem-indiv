@@ -45,6 +45,12 @@ footer {
   align-items: center;
   justify-content: center;
   margin-top: 10vh;
+  @media (max-width: 1200px) {
+    margin-top: 30px;
+  }
+  @media (max-width: 900px) {
+    margin-top: 70px;
+  }
   p {
     font-family: "Montserrat", sans-serif;
     font-style: normal;
@@ -67,6 +73,7 @@ footer {
     }
 
     .ref-company {
+      font-weight: bold;
       text-decoration: none;
       &:hover {
         color: #8d8d8d;

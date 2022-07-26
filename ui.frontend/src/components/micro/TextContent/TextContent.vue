@@ -1,5 +1,7 @@
 <template>
-  <p>{{ contentText }}</p>
+  <div class="text-container">
+    <p>{{ contentText }}</p>
+  </div>
 </template>
 
 <script>
@@ -17,13 +19,23 @@ export default {
 
 <style lang="scss" scoped>
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono&display=swap");
-p {
-  font-family: "Space Mono", monospace;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: -0.035em;
-  color: #4f4f4f;
+.text-container {
+  width: 100%;
+  @media (max-width: 768px) {
+    width: 80%;
+  }
+  p {
+    font-family: "Space Mono", monospace;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+    letter-spacing: -0.035em;
+    color: #4f4f4f;
+    @media (max-width: 1200px) {
+      font-size: 18px;
+      line-height: 25px;
+    }
+  }
 }
 </style>

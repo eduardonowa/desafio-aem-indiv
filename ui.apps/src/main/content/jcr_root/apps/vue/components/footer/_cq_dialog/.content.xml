@@ -14,12 +14,12 @@
                     <user
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Username"
+                        fieldLabel="Github Username"
                         name="./username"/>
                     <gituser
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Username Github Link"
+                        fieldLabel="Github Link"
                         name="./href"/>
                     <company
                         jcr:primaryType="nt:unstructured"

@@ -14,17 +14,17 @@
                     <title
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Title Text"
+                        fieldLabel="Title Txt"
                         name="./textTitle"/>
                     <text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Content Text"
+                        fieldLabel="Content Txt"
                         name="./textContent"/>
                     <button
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Button Text"
+                        fieldLabel="Button Txt"
                         name="./textButton"/>
                 </items>
             </column>
