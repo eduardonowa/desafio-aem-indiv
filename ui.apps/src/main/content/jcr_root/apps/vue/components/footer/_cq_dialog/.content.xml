@@ -31,6 +31,37 @@
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
                         fieldLabel="Company WebSite"
                         name="./hrefCompany"/>
+                    <textcolor
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
+                        fieldLabel="Text Color"
+                        name="./color"/>
+                    <fontFamily cq-msm-lockable="./fontFamily"
+                        defaultValue="fontFamily"
+                        fieldLabel="Select a font-family:"
+                        jcr:primaryType="nt:unstructured"
+                        name="./fontFamily"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        value="false">
+                            <items jcr:primaryType="nt:unstructured">
+                                <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
+                                <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
+                                <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
+                            </items>
+                    </fontFamily>
+                    <position cq-msm-lockable="./position"
+                        defaultValue="flex-end"
+                        fieldLabel="Select a font-family:"
+                        jcr:primaryType="nt:unstructured"
+                        name="./position"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        value="false">
+                            <items jcr:primaryType="nt:unstructured">
+                                <start jcr:primaryType="nt:unstructured" text="Left" value="flex-start"/>
+                                <center jcr:primaryType="nt:unstructured" text="Center" value="center"/>
+                                <end jcr:primaryType="nt:unstructured" text="Right" value="flex-end"/>
+                            </items>
+                    </position>
                 </items>
             </column>
         </items>

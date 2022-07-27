@@ -48,8 +48,8 @@ main {
   width: 50%;
   margin-left: 5vw;
   @media (max-width: 768px) {
-    margin-left: 15px;
-    width: 99%;
+    margin: 0 auto;
+    width: 98%;
   }
   .right-main {
     display: flex;

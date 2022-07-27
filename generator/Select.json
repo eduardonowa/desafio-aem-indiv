@@ -22,18 +22,44 @@
     "slingmodel": true,
     "testclass": false,
     "junit-major-version": 5,
-    "content-exporter": true,
+    "content-exporter": false,
     "model-adaptables": [
       "request"
     ],
-    "generic-javadoc": false,
     "properties": [
       {
-        "field": "valorInicial",
-        "label": "Digite um valor inicial",
-        "type": "textfield",
-        "json-expose": true,
-        "json-property": "valorInicial"
+        "field": "font-family",
+        "type": "select",
+        "label": "Selecione uma fonte:",
+        "json-expose": false,
+        "json-property": "font-family",
+        "attributes": {
+          "defaultValue": "font-family",
+          "value": false
+        },
+        "items": [
+          {
+            "field": "Inconsolata",
+            "attributes": {
+              "text": "Inconsolata",
+              "value": "Inconsolata"
+            }
+          },
+          {
+            "field": "Montserrat",
+            "attributes": {
+              "text": "Montserrat",
+              "value": "Montserrat"
+            }
+          },
+          {
+            "field": "Space Mono",
+            "attributes": {
+              "text": "Space Mono",
+              "value": "Space Mono"
+            }
+          }
+        ]
       }
     ]
   }

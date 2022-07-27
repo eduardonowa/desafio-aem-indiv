@@ -11,21 +11,27 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
+
                     <title
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Title Txt"
+                        fieldLabel="Title Text"
                         name="./textTitle"/>
                     <text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Content Txt"
+                        fieldLabel="Content Text"
                         name="./textContent"/>
                     <button
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Button Txt"
+                        fieldLabel="Button Text"
                         name="./textButton"/>
+                    <imagem
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/image"
+                        fieldLabel="Image"
+                        name="./image"/>
                 </items>
             </column>
         </items>

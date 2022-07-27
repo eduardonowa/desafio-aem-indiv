@@ -1,6 +1,11 @@
 <template>
-  <footer>
-    <p>
+  <footer :style="{'justify-content': position}">
+    <p
+      :style="{
+        color: color,
+        'font-family': fontFamily
+      }"
+    >
       created by <a target="blank" :href="href" class="ref">{{ username }}</a> -
       <a target="blank" :href="hrefCompany" class="ref-company">{{
         company
@@ -28,6 +33,15 @@ export default {
     hrefCompany: {
       type: String,
       default: 'https://compass.uol/'
+    },
+    color: {
+      type: String
+    },
+    fontFamily: {
+      type: String
+    },
+    position: {
+      type: String
     }
   }
 }
@@ -37,14 +51,20 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
 footer {
-  width: 100%;
-  height: 100px;
+  position: absolute;
+  bottom: 15px;
+  width: 90%;
+  height: 70px;
+  padding: 0 10px;
   margin: 0 auto;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   margin-top: 10vh;
+  @media (max-height: 900px) {
+    position: static;
+  }
   @media (max-width: 1200px) {
     margin-top: 30px;
   }

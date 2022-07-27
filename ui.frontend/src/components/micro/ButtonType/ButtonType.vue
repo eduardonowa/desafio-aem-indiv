@@ -1,6 +1,14 @@
 <template>
   <div>
-    <button>{{ buttonText }}</button>
+    <button
+      :style="{
+        color: colorButton,
+        'background-color': bgColor,
+        'font-family': fontFamily,
+      }"
+    >
+      {{ buttonText }}
+    </button>
   </div>
 </template>
 
@@ -11,6 +19,15 @@ export default {
     buttonText: {
       type: String,
       default: 'back to homepage'
+    },
+    colorButton: {
+      type: String
+    },
+    bgColor: {
+      type: String
+    },
+    fontFamily: {
+      type: String
     }
   }
 }
@@ -29,6 +46,10 @@ button {
   line-height: 21px;
   letter-spacing: -0.035em;
   text-transform: uppercase;
+  @media (max-width: 300px) {
+    width: 190px;
+    height: 55px;
+  }
   &:hover {
     border: 2px solid #333333;
     color: #333333;

@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header :style="{ 'color': colorHeader , 'font-weight': fontwHeader , 'justify-content': position , 'font-family': fontFamily}">
     {{ text }}
   </header>
 </template>
@@ -13,6 +13,18 @@ export default {
     text: {
       type: String,
       default: '404 not found'
+    },
+    colorHeader: {
+      type: String
+    },
+    fontwHeader: {
+      type: Number
+    },
+    position: {
+      type: String
+    },
+    fontFamily: {
+      type: String
     }
   }
 }
@@ -21,6 +33,8 @@ export default {
 <style lang="scss" scooped>
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata&display=swap");
 header {
+  display: flex;
+  justify-content: flex-start;
   width: 90%;
   font-family: "Inconsolata", monospace;
   font-style: normal;

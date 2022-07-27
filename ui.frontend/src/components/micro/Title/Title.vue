@@ -1,6 +1,8 @@
 <template>
   <div class="title-container">
-    <h1>{{ titleText }}</h1>
+    <h1 :style="{ 'color': colorTitle , 'font-family': fontFamily}">
+      {{ titleText }}
+    </h1>
   </div>
 </template>
 
@@ -11,6 +13,12 @@ export default {
     titleText: {
       type: String,
       default: 'I have bad news for you'
+    },
+    colorTitle: {
+      type: String
+    },
+    fontFamily: {
+      type: String
     }
   }
 }
