@@ -2,7 +2,7 @@
   <div>
     <button
       :style="{
-        color: colorButton,
+        'color': colorButton,
         'background-color': bgColor,
         'font-family': fontFamily,
       }"
@@ -49,15 +49,6 @@ button {
   @media (max-width: 300px) {
     width: 190px;
     height: 55px;
-  }
-  &:hover {
-    border: 2px solid #333333;
-    color: #333333;
-    background: #fff;
-    transition: 1s;
-  }
-  &:not(:hover) {
-    transition: 1s;
   }
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="title-container">
-    <h1 :style="{ 'color': colorTitle , 'font-family': fontFamily}">
+    <h1 :style="{ 'color': colorTitle , 'font-family': fontFamily , 'font-style': fontStyle}">
       {{ titleText }}
     </h1>
   </div>
@@ -18,6 +18,9 @@ export default {
       type: String
     },
     fontFamily: {
+      type: String
+    },
+    fontStyle: {
       type: String
     }
   }
@@ -39,6 +42,7 @@ export default {
       width: 90%;
       font-size: 45px;
       line-height: 65px;
+      margin: 0;
     }
   }
 }

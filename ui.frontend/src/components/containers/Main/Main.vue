@@ -1,9 +1,19 @@
 <template>
   <main class="main-container">
     <div class="right-main">
-      <Title :titleText="textTitle" />
-      <TextContent :contentText="textContent" />
-      <ButtonType :buttonText="textButton" />
+      <Title
+        :titleText="textTitle"
+        :fontFamily="fontFamilyTitle"
+        :colorTitle="colorTitle"
+        :fontStyle="fontStyleTitle"
+      />
+      <TextContent
+        :contentText="textContent"
+        :fontFamily="fontFamilyText"
+        :fontStyle="fontStyleText"
+        :colorText="colorText"
+      />
+      <ButtonType :buttonText="textButton" :colorButton="colorButton" :fontFamily="fontFamilyButton" :bgColor="bgColorButton"/>
     </div>
   </main>
 </template>
@@ -11,7 +21,6 @@
 <script>
 import Title from '../../micro/Title/Title.vue'
 import TextContent from '../../micro/TextContent/TextContent.vue'
-
 import ButtonType from '../../micro/ButtonType/ButtonType.vue'
 export default {
   name: 'Main',
@@ -29,6 +38,33 @@ export default {
     },
     textButton: {
       type: String
+    },
+    fontFamilyText: {
+      type: String
+    },
+    fontFamilyTitle: {
+      type: String
+    },
+    fontFamilyButton: {
+      type: String
+    },
+    colorTitle: {
+      type: String
+    },
+    colorText: {
+      type: String
+    },
+    fontStyleTitle: {
+      type: String
+    },
+    fontStyleText: {
+      type: String
+    },
+    bgColorButton: {
+      type: String
+    },
+    colorButton: {
+      type: String
     }
   }
 }
@@ -45,10 +81,10 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 75%;
   margin-left: 5vw;
   @media (max-width: 768px) {
-    margin: 0 auto;
+    margin: 0 auto 0 15px;
     width: 98%;
   }
   .right-main {

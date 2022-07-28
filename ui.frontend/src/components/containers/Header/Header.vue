@@ -1,5 +1,5 @@
 <template>
-  <header :style="{ 'color': colorHeader , 'font-weight': fontwHeader , 'justify-content': position , 'font-family': fontFamily}">
+  <header :style="{ 'color': colorHeader , 'justify-content': position , 'font-family': fontFamily , 'background': bgColor , 'font-style': fontStyle}">
     {{ text }}
   </header>
 </template>
@@ -17,13 +17,16 @@ export default {
     colorHeader: {
       type: String
     },
-    fontwHeader: {
-      type: Number
-    },
     position: {
       type: String
     },
     fontFamily: {
+      type: String
+    },
+    bgColor: {
+      type: String
+    },
+    fontStyle: {
       type: String
     }
   }

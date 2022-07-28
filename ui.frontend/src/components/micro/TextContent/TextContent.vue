@@ -1,6 +1,6 @@
 <template>
   <div class="text-container">
-    <p :style="{ 'color': colorText , 'font-family': fontFamily}">
+    <p :style="{ 'color': colorText , 'font-family': fontFamily , 'font-style': fontStyle}">
       {{ contentText }}
     </p>
   </div>
@@ -19,6 +19,9 @@ export default {
       type: String
     },
     fontFamily: {
+      type: String
+    },
+    fontStyle: {
       type: String
     }
   }

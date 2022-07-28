@@ -1,0 +1,50 @@
+{
+    "project-settings": {
+        "code-owner": "SPA Vue Project",
+        "bundle-path": "../core/src/main/java",
+        "test-path": "../core/src/test/java",
+        "apps-path": "../ui.apps/src/main/content/jcr_root/apps",
+        "component-path": "vue",
+        "model-interface-pkg": "com.vue.core.models.commerce",
+        "model-impl-pkg": "com.vue.core.models.commerce"
+    },
+    "name": "multifield",
+    "title": "Examplo -  Multifield",
+    "group": "SPA Vue Project - Content",
+    "type": "components",
+    "options": {
+        "js": false,
+        "jstxt": false,
+        "css": false,
+        "csstxt": false,
+        "html": false,
+        "html-content": false,
+        "slingmodel": false,
+        "testclass": false,
+        "junit-major-version": 5,
+        "content-exporter": false,
+        "model-adaptables": [
+            "request"
+        ],
+        "generic-javadoc": false,
+        "properties": [
+            {
+                "field": "countries",
+                "type": "multifield",
+                "model-name": "MultifieldModel",
+                "use-existing-model": false,
+                "label": "Lista de Países",
+                "json-expose": false,
+                "items": [
+                    {
+                        "field": "country",
+                        "type": "textfield",
+                        "label": "Nome do País",
+                        "description": "Aqui você pode adicionar uma lista de países.",
+                        "json-expose": false
+                    }
+                ]
+            }
+        ]
+    }
+}

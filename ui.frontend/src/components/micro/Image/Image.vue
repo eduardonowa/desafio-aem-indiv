@@ -24,6 +24,7 @@ export default {
   justify-content: center;
   margin: 0 auto;
   @media (max-width: 768px) {
+    width: 95%;
     margin-top: 50px;
   }
   img {
@@ -32,8 +33,8 @@ export default {
     max-height: 40vh;
     @media (max-width: 1200px) {
       margin-top: 0px;
-      width: 100%;
-      height: 90%;
+      width: 75%;
+      height: 75%;
     }
   }
 }

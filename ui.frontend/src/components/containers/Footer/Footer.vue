@@ -1,9 +1,9 @@
 <template>
-  <footer :style="{'justify-content': position}">
+  <footer :style="{ 'justify-content': position, 'background': bgColor }">
     <p
       :style="{
-        color: color,
-        'font-family': fontFamily
+        'color': color,
+        'font-family': fontFamily ,  'font-style': fontStyle
       }"
     >
       created by <a target="blank" :href="href" class="ref">{{ username }}</a> -
@@ -42,6 +42,12 @@ export default {
     },
     position: {
       type: String
+    },
+    bgColor: {
+      type: String
+    },
+    fontStyle: {
+      type: String
     }
   }
 }
@@ -69,7 +75,7 @@ footer {
     margin-top: 30px;
   }
   @media (max-width: 900px) {
-    margin-top: 70px;
+    margin-top: 100px;
   }
   p {
     font-family: "Montserrat", sans-serif;
