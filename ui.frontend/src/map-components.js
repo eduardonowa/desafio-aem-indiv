@@ -10,6 +10,8 @@ import Title from './components/micro/Title/Title'
 import TextContent from './components/micro/TextContent/TextContent'
 import Main from './components/containers/Main/Main'
 import Footer from './components/containers/Footer/Footer'
+import TextTest from './components/micro/TextTest/TextTest'
+import ImgType from './components/micro/ImgType/ImgType'
 import {
   withComponentMappingContext,
   AllowedComponentsContainer,
@@ -38,6 +40,9 @@ MapTo('vue/components/multifield-example-component')(
   EditConfig
 )
 
+// Title Component Mapping
+MapTo('vue/components/img-type')(ImgType, EditConfig)
+
 // Checkbox Component Mapping
 MapTo('vue/components/checkbox')(CheckBox, EditConfig)
 
@@ -52,6 +57,9 @@ MapTo('vue/components/footer')(Footer, EditConfig)
 
 // Header Component Mapping
 MapTo('vue/components/header')(Header, EditConfig)
+
+// TextTest Component Mapping
+MapTo('vue/components/text-test')(TextTest, EditConfig)
 
 // TextContent Component Mapping
 MapTo('vue/components/text-content')(TextContent, EditConfig)

@@ -1,9 +1,10 @@
 <template>
-  <footer :style="{ 'justify-content': position, 'background': bgColor }">
+  <footer :style="{ 'justify-content': position, 'background': bgColor , 'display': showFooter }">
     <p
       :style="{
         'color': color,
-        'font-family': fontFamily ,  'font-style': fontStyle
+        'font-family': fontFamily ,  'font-style': fontStyle,
+        'font-size': formatFontSize
       }"
     >
       created by <a target="blank" :href="href" class="ref">{{ username }}</a> -
@@ -48,6 +49,19 @@ export default {
     },
     fontStyle: {
       type: String
+    },
+    showFooter: {
+      type: String
+    },
+    fontSize: {
+      type: String,
+      default: '14'
+    }
+
+  },
+  computed: {
+    formatFontSize () {
+      return (this.fontSize) + 'px'
     }
   }
 }

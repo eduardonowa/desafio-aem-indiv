@@ -1,6 +1,6 @@
 <template>
   <div class="text-container">
-    <p :style="{ 'color': colorText , 'font-family': fontFamily , 'font-style': fontStyle , 'display': showText , 'font-size': formatFontSize}">
+    <p :style="{ 'font-family': fontFamily }">
       {{ contentText }}
     </p>
   </div>
@@ -15,26 +15,8 @@ export default {
       default:
         'The page you are looking for might be removed or is temporarily unavailable'
     },
-    colorText: {
-      type: String
-    },
     fontFamily: {
       type: String
-    },
-    fontStyle: {
-      type: String
-    },
-    showText: {
-      type: String
-    },
-    fontSize: {
-      type: String,
-      default: '22'
-    }
-  },
-  computed: {
-    formatFontSize () {
-      return (this.fontSize) + 'px'
     }
   }
 }

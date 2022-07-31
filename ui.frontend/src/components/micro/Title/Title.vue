@@ -1,6 +1,13 @@
 <template>
-  <div class="title-container">
-    <h1 :style="{ 'color': colorTitle , 'font-family': fontFamily , 'font-style': fontStyle}">
+  <div class="title-container" :style="{'display': showTitle}">
+    <h1
+      :style="{
+        color: colorTitle,
+        'font-family': fontFamily,
+        'font-style': fontStyle,
+        'font-size': formatFontSize
+      }"
+    >
       {{ titleText }}
     </h1>
   </div>
@@ -22,9 +29,23 @@ export default {
     },
     fontStyle: {
       type: String
+    },
+    showTitle: {
+      type: String,
+      default: 'block'
+    },
+    fontSize: {
+      type: String,
+      default: '60'
+    }
+  },
+  computed: {
+    formatFontSize () {
+      return (this.fontSize) + 'px'
     }
   }
 }
+
 </script>
 
 <style lang="scss" scoped>

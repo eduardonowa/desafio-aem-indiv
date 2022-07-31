@@ -1,5 +1,15 @@
 <template>
-  <header :style="{ 'color': colorHeader , 'justify-content': position , 'font-family': fontFamily , 'background': bgColor , 'font-style': fontStyle}">
+  <header
+    :style="{
+      'color': colorHeader,
+      'justify-content': position,
+      'font-family': fontFamily,
+      'background': bgColor,
+      'font-style': fontStyle,
+      'display': showHeader,
+      'font-size': formatFontSize
+    }"
+  >
     {{ text }}
   </header>
 </template>
@@ -28,6 +38,18 @@ export default {
     },
     fontStyle: {
       type: String
+    },
+    showHeader: {
+      type: String
+    },
+    fontSize: {
+      type: String,
+      default: '24'
+    }
+  },
+  computed: {
+    formatFontSize () {
+      return (this.fontSize) + 'px'
     }
   }
 }

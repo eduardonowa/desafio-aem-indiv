@@ -5,7 +5,10 @@
         'color': colorButton,
         'background-color': bgColor,
         'font-family': fontFamily,
+        'display': showButton,
+        'font-size': formatFontSize
       }"
+
     >
       {{ buttonText }}
     </button>
@@ -28,6 +31,18 @@ export default {
     },
     fontFamily: {
       type: String
+    },
+    showButton: {
+      type: String
+    },
+    fontSize: {
+      type: String,
+      default: '14'
+    }
+  },
+  computed: {
+    formatFontSize () {
+      return (this.fontSize) + 'px'
     }
   }
 }
