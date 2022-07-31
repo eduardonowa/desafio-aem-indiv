@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="nt:unstructured"
-    jcr:title="Properties"
+    jcr:title="Text Content Properties"
     sling:resourceType="cq/gui/components/authoring/dialog">
     <content
         jcr:primaryType="nt:unstructured"
@@ -11,46 +11,29 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
-                    <title
+                    <text
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                        fieldLabel="Title text"
-                        name="./titleText"/>
-                    <titlecolor
+                        fieldLabel="Text Content"
+                        name="./contentText"/>
+                    <textcolor
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/colorfield"
-                        fieldLabel="Title color"
-                        name="./colorTitle"/>
+                        fieldLabel="Text Content"
+                        name="./colorText"/>
                     <fontFamily cq-msm-lockable="./fontFamily"
-                        defaultValue="fontFamily"
+                        defaultValue="Space Mono"
                         fieldLabel="Select a font-family:"
                         jcr:primaryType="nt:unstructured"
                         name="./fontFamily"
                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                        value="false">
+                        value="true">
                             <items jcr:primaryType="nt:unstructured">
                                 <Inconsolata jcr:primaryType="nt:unstructured" text="Inconsolata" value="Inconsolata"/>
                                 <Montserrat jcr:primaryType="nt:unstructured" text="Montserrat" value="Montserrat"/>
                                 <SpaceMono jcr:primaryType="nt:unstructured" text="Space Mono" value="Space Mono"/>
                             </items>
                     </fontFamily>
-                    <showTitle cq-msm-lockable="./showTitle"
-                                    fieldLabel="Show title?"
-                                    jcr:primaryType="nt:unstructured"
-                                    name="./showTitle"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
-                                    vertical="{Boolean}true">
-                                    <items jcr:primaryType="nt:unstructured">
-                                        <showTitleTrue checked="{Boolean}true"
-                                            jcr:primaryType="nt:unstructured"
-                                            name="showTitle"
-                                            text="Yes"
-                                            value="block"/>
-                                        <showTitleFalse checked="{Boolean}false"
-                                            jcr:primaryType="nt:unstructured"
-                                            name="showTitle"
-                                            text="No"
-                                            value="none"/>
                 </items>
             </column>
         </items>

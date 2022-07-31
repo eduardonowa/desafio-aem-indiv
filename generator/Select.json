@@ -8,7 +8,7 @@
     "model-interface-pkg": "com.vue.core.models",
     "model-impl-pkg": "com.vue.core.models.impl"
   },
-  "name": "select",
+  "name": "selecttest",
   "title": "Vue - Select",
   "group": "SPA Vue Project - Content",
   "type": "components",
@@ -28,11 +28,11 @@
     ],
     "properties": [
       {
-        "field": "font-family",
+        "field": "fontFamily",
         "type": "select",
         "label": "Selecione uma fonte:",
         "json-expose": false,
-        "json-property": "font-family",
+        "json-property": "fontFamily", 
         "attributes": {
           "defaultValue": "font-family",
           "value": false

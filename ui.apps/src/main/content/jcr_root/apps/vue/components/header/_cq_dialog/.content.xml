@@ -52,7 +52,6 @@
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/foundation/container">
                             <items jcr:primaryType="nt:unstructured">
-                        <!-- tab2 insert -->
                                 <fontFamily cq-msm-lockable="./fontFamily"
                                         defaultValue="fontFamily"
                                         fieldLabel="Select a font family:"
@@ -80,6 +79,11 @@
                                         <oblique jcr:primaryType="nt:unstructured" text="Oblique" value="oblique"/>
                                     </items>
                                 </fontStyle> 
+                                <fontSize cq-msm-lockable="./fontSize"
+                                    fieldLabel="Font Size (px)"
+                                    jcr:primaryType="nt:unstructured"
+                                    name="./fontSize"
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/numberfield"/>
                         </items>
                     </column>
                 </items>
@@ -96,25 +100,32 @@
                         <column
                             jcr:primaryType="nt:unstructured"
                             sling:resourceType="granite/ui/components/foundation/container">
-                            <items jcr:primaryType="nt:unstructured">
-                        <!-- tab2 insert -->
-                                <position 
-                                    cq-msm-lockable="./position"
-                                    defaultValue="flex-start"
-                                    fieldLabel="Text position:"
+                            <items jcr:primaryType="nt:unstructured">           
+                                <position cq-msm-lockable="./position"
+                                    fieldLabel="Select a position:"
                                     jcr:primaryType="nt:unstructured"
                                     name="./position"
-                                    sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                    value="false">
+                                    sling:resourceType="granite/ui/components/coral/foundation/form/radiogroup"
+                                    vertical="{Boolean}false">
                                     <items jcr:primaryType="nt:unstructured">
-                                        <start jcr:primaryType="nt:unstructured" text="Left" value="flex-start"/>
-                                        <center jcr:primaryType="nt:unstructured" text="Center" value="center"/>
-                                        <end jcr:primaryType="nt:unstructured" text="Right" value="flex-end"/>
+                                        <left checked="{Boolean}true"
+                                            jcr:primaryType="nt:unstructured"
+                                            name="position"
+                                            text="Left"
+                                            value="flex-start"/>
+                                        <center checked="{Boolean}false"
+                                            jcr:primaryType="nt:unstructured"
+                                            name="position"
+                                            text="Center"
+                                            value="center"/>
+                                        <right checked="{Boolean}false"
+                                            jcr:primaryType="nt:unstructured"
+                                            name="position"
+                                            text="Right"
+                                            value="flex-end"/>
                                     </items>
-                                </position>   
-                        </items>
-                    </column>
-                </items>
+                            </column>
+                    </items>
             </tab3>
         </items>
     </content>
