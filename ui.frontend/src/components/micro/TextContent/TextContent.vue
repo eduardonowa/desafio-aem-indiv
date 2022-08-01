@@ -56,7 +56,6 @@ export default {
     letter-spacing: -0.035em;
     color: #4f4f4f;
     @media (max-width: 1200px) {
-      font-size: 18px;
       line-height: 25px;
     }
   }

@@ -12,7 +12,7 @@ export default {
     },
     imgDescription: {
       type: String,
-      default: 'Espantalho'
+      default: 'scarecrow'
     }
   }
 }
@@ -24,8 +24,9 @@ img {
   max-height: 50vh;
 
   @media (max-width: 768px) {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 70%;
+    max-height: 70%;
   }
+
 }
 </style>

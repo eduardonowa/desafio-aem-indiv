@@ -53,17 +53,17 @@ export default {
 .title-container {
   width: 100%;
   h1 {
+    display: inline;
     font-weight: 700;
     font-size: 60px;
     line-height: 80px;
     letter-spacing: -0.035em;
     font-family: "Space Mono", monospace;
     color: #333333;
+    margin: 0;
     @media (max-width: 1200px) {
       width: 90%;
-      font-size: 45px;
       line-height: 65px;
-      margin: 0;
     }
   }
 }

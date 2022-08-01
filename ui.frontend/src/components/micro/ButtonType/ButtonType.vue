@@ -3,10 +3,11 @@
     <button
       :style="{
         'color': colorButton,
-        'background-color': bgColor,
+        'background': bgColor,
         'font-family': fontFamily,
         'display': showButton,
-        'font-size': formatFontSize
+        'font-size': formatFontSize,
+        'border-radius': formatBorderRadius
       }"
 
     >
@@ -38,11 +39,19 @@ export default {
     fontSize: {
       type: String,
       default: '14'
+    },
+    borderRadius: {
+      type: String,
+      default: '0'
     }
+
   },
   computed: {
     formatFontSize () {
       return (this.fontSize) + 'px'
+    },
+    formatBorderRadius () {
+      return (this.borderRadius) + 'px'
     }
   }
 }
@@ -61,6 +70,8 @@ button {
   line-height: 21px;
   letter-spacing: -0.035em;
   text-transform: uppercase;
+  border: none;
+
   @media (max-width: 300px) {
     width: 190px;
     height: 55px;
